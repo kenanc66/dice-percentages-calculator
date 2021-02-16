@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: chocolate;
+}
+.visible {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}
+.z {
+  z-index: 100;
+}
+/*button */
+
+button {
+  background: black;
+  color: cornsilk;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15rem;
+  border: crimson 3px solid;
+  outline: none;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.diceUI {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice1 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice2 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice3 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice4 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice5 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice6 {
+  visibility: visible;
+  position: absolute;
+}
+
+.dice {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background: cornflowerblue;
+}
+
+.dot1 {
+  left: 25px;
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.dot2 {
+  right: 25px;
+  position: absolute;
+  bottom: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dot3 {
+  left: 25px;
+  position: absolute;
+  bottom: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.dot4 {
+  right: 25px;
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.dot-middle {
+  left: 45px;
+  position: absolute;
+  bottom: 45px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.dot6 {
+  left: 45px;
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.dot6-1 {
+  left: 45px;
+  position: absolute;
+  bottom: 25px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+/*button effects*/
+.button {
+  margin-right: 20rem;
+  position: relative;
+  display: inline-block;
+}
+
+.button a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffa12b;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: #f78900;
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2b1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.rec {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 20rem;
+  color: #ffe5c4;
+  font-size: 1rem;
+}
+.rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 5rem;
+}
