@@ -196,19 +196,23 @@ button {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.rec {
-  display: inline-block;
-  padding: 1rem;
-  width: 100%;
-  margin-top: 2rem;
-  margin-left: 20rem;
-  color: #ffe5c4;
-  font-size: 1rem;
+.order {
+  color: white;
+  display: flex;
+  flex-direction: row;
 }
 .rates {
+  font-size: 4rem;
+  margin-left: auto;
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 4rem;
-  font-size: 5rem;
+}
+.bottom {
+  margin-top: 1rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  overflow: auto;
 }

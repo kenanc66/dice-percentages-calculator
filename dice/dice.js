@@ -1,5 +1,5 @@
 
-
+let order = 0;
 let count1 = 0;
 let count2 = 0;
 let count3 = 0;
@@ -20,7 +20,6 @@ function hidden(a) {
 
     document.getElementById(`dice${a}`).classList.add("hidden");
 };
-
 function roll() {
     let dicer = Math.floor(Math.random() * 6 + 1);
     console.log(dicer);
@@ -32,7 +31,9 @@ function roll() {
         hidden(4);
         hidden(5);
         hidden(6); count1++;
-        document.querySelector('.rec').innerText = `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /*  document.querySelector('.rec').innerHTML += `${dicer + "."}`;*/
 
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
@@ -61,7 +62,9 @@ function roll() {
         hidden(4);
         hidden(5);
         hidden(6); count2++;
-        document.querySelector('.rec').innerText += `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /* document.querySelector('.rec').innerText += `${dicer + "."}`;*/
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
         document.querySelector(".one").innerHTML = `${perCount1}`;
@@ -89,7 +92,9 @@ function roll() {
         hidden(4);
         hidden(5);
         hidden(6); count3++;
-        document.querySelector('.rec').innerText += `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /*  document.querySelector('.rec').innerText += `${dicer + "."}`;*/
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
         document.querySelector(".one").innerHTML = `${perCount1}`;
@@ -116,7 +121,9 @@ function roll() {
         hidden(1);
         hidden(5);
         hidden(6); count4++;
-        document.querySelector('.rec').innerText += `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /* document.querySelector('.rec').innerText += `${dicer + "."}`;*/
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
         document.querySelector(".one").innerHTML = `${perCount1}`;
@@ -143,7 +150,9 @@ function roll() {
         hidden(4);
         hidden(1);
         hidden(6); count5++;
-        document.querySelector('.rec').innerText += `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /*  document.querySelector('.rec').innerText += `${dicer + "."}`;*/
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
         document.querySelector(".one").innerHTML = `${perCount1}`;
@@ -170,7 +179,9 @@ function roll() {
         hidden(4);
         hidden(5);
         hidden(1); count6++;
-        document.querySelector('.rec').innerText += `${dicer + "."}`;
+        order++;
+        document.querySelector('.order').innerHTML += `<div id="${order}">${order + "." + ""}<div>${dicer + "." + ""}</div></div>`;
+        /*document.querySelector('.rec').innerText += `${dicer + "."}`;*/
         per = count1 + count2 + count3 + count4 + count5 + count6;
         perCount1 = Math.floor((count1 / per) * 100);
         document.querySelector(".one").innerHTML = `${perCount1}`;
